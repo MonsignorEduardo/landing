@@ -2,12 +2,16 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/tailwind': ^3.0.1
+  '@prisma/client': ^4.10.0
   astro: ^2.0.6
+  prisma: ^4.10.0
   tailwindcss: ^3.2.4
   web-vitals: ^3.1.1
 
 dependencies:
   '@astrojs/tailwind': 3.0.1_jiulpwjund37q6yckwlgwo54mu
+  '@prisma/client': 4.10.0_prisma@4.10.0
+  prisma: 4.10.0
   tailwindcss: 3.2.4
 
 devDependencies:
@@ -567,6 +571,29 @@ packages:
       picocolors: 1.0.0
       tiny-glob: 0.2.9
       tslib: 2.5.0
+
+  /@prisma/client/4.10.0_prisma@4.10.0:
+    resolution: {integrity: sha512-sBmYb1S6SMKFIESaLMfKqWSalv3pH73cMCsFt9HslJvYjIIcKQCA6PDL2O4SZGWvc4JBef9cg5Gd7d9x3AtKjw==}
+    engines: {node: '>=14.17'}
+    requiresBuild: true
+    peerDependencies:
+      prisma: '*'
+    peerDependenciesMeta:
+      prisma:
+        optional: true
+    dependencies:
+      '@prisma/engines-version': 4.10.0-84.ca7fcef713137fa11029d519a9780db130cca91d
+      prisma: 4.10.0
+    dev: false
+
+  /@prisma/engines-version/4.10.0-84.ca7fcef713137fa11029d519a9780db130cca91d:
+    resolution: {integrity: sha512-UVpmVlvSaGfY4ue+hh8CTkIesbuXCFUfrr8zk//+u85WwkKfWMtt6nLB2tNSzR1YO8eAA8+HqNf8LM7mnXIq5w==}
+    dev: false
+
+  /@prisma/engines/4.10.0:
+    resolution: {integrity: sha512-ZPPo7q+nQZdTlPFedS7mFXPE3oZ2kWtTh3GO4sku0XQ8ikLqEyinuTPJbQCw/8qel2xglIEQicsK6yI4Jgh20A==}
+    requiresBuild: true
+    dev: false
 
   /@proload/core/0.3.3:
     resolution: {integrity: sha512-7dAFWsIK84C90AMl24+N/ProHKm4iw0akcnoKjRvbfHifJZBLhaDsDus1QJmhG12lXj4e/uB/8mB/0aduCW+NQ==}
@@ -2168,6 +2195,15 @@ packages:
     resolution: {integrity: sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+
+  /prisma/4.10.0:
+    resolution: {integrity: sha512-xUHcF3Glc8QGgW8x0rfPITvyyTo04fskUdG7pI4kQbvDX/rhzDP4046x/FvazYqYHXMLR5/KTIi2p2Gth5vKOQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 4.10.0
+    dev: false
 
   /prismjs/1.29.0:
     resolution: {integrity: sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==}
