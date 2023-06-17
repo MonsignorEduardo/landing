@@ -1,6 +1,6 @@
 import { component$, Slot } from "@builder.io/qwik";
 import type { RequestHandler } from "@builder.io/qwik-city";
-import { kv } from "@vercel/kv";
+import { client } from "~/libs/kv";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:
@@ -12,8 +12,8 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
     maxAge: 5,
   });
   // Increment the page views counter
-  const views = await kv.get<number>("pageViews");
-  await kv.set("pageViews", (views ?? 0) + 1);
+  const views = await client.get<number>("pageViews");
+  await client.set("pageViews", (views ?? 0) + 1);
 };
 
 export default component$(() => {

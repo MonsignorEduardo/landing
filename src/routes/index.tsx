@@ -1,11 +1,11 @@
 import { component$, useSignal } from "@builder.io/qwik";
 import type { DocumentHead } from "@builder.io/qwik-city";
 import { Link, routeLoader$ } from "@builder.io/qwik-city";
-import { kv } from "@vercel/kv";
+import { client } from "~/libs/kv";
 import { Image } from "@unpic/qwik";
 
 export const useGetPageViews = routeLoader$(async () => {
-  const views = await kv.get<number>("pageViews");
+  const views = await client.get<number>("pageViews");
   return views ?? 0;
 });
 
