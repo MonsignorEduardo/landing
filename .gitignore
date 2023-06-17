@@ -43,3 +43,7 @@ functions/**/*.js
 
 # Vercel
 .vercel
+
+
+# Env
+.env
