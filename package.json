@@ -2,7 +2,7 @@
   "name": "landing",
   "description": "Mi landing page",
   "engines": {
-    "node": ">=15.0.0"
+    "node": ">=18.16.0"
   },
   "private": true,
   "scripts": {
