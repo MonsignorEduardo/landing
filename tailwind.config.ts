@@ -5,4 +5,7 @@ export default {
   content: ["{routes,islands,components}/**/*.{ts,tsx}"],
   // deno-lint-ignore no-explicit-any
   plugins: [daisyui as any],
+  daisyui: {
+    themes: ["black"],
+  },
 } satisfies Config;
